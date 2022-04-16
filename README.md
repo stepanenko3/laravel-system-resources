@@ -3,6 +3,20 @@
 ## Description
 Get OS resources from Laravel
 
+## Usage
+``` php
+$ram = SystemResources::ram();
+$ramUsed = SystemResources::ramUsed();
+$ramTotal = SystemResources::ramTotal();
+
+$disk = SystemResources::disk();
+$diskUsed = SystemResources::diskUsed();
+$diskTotal = SystemResources::diskTotal();
+
+$cpuName = SystemResources::cpuName();
+$cpu = SystemResources::cpu();
+```
+
 ## Install
 
 Via Composer
