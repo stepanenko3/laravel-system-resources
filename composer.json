@@ -1,0 +1,34 @@
+{
+    "name": "stepanenko3/laravel-system-resources",
+    "description": "Get OS resources from Laravel",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Stepanenko",
+            "email": "stpnnk.artem@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": ">=9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stepanenko3\\LaravelSystemResources\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Stepanenko3\\LaravelSystemResources\\SystemResourcesServiceProvider"
+            ],
+            "aliases": {
+                "SystemResources": "Stepanenko3\\LaravelSystemResources\\Facades\\SystemResources"
+            }
+        }
+    }
+}
