@@ -1,5 +1,5 @@
-# Changelog
+# Release Notes
 
-## [1.0.0] - 2022-04-17
-### Added
+## [1.0.0] - xxx-xx-xx
+
 - First version

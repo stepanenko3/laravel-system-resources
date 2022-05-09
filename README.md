@@ -1,9 +1,15 @@
 # OS Resources
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stepanenko3/laravel-system-resources.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/laravel-system-resources)
+[![Total Downloads](https://img.shields.io/packagist/dt/stepanenko3/laravel-system-resources.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/laravel-system-resources)
+[![License](https://poser.pugx.org/stepanenko3/laravel-system-resources/license)](https://packagist.org/packages/stepanenko3/laravel-system-resources)
+
 ## Description
+
 Get OS resources from Laravel
 
 ## Usage
+
 ``` php
 $ram = SystemResources::ram();
 $ramUsed = SystemResources::ramUsed();
