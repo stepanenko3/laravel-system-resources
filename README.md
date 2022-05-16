@@ -8,6 +8,18 @@
 
 Get OS resources from Laravel
 
+## Requirements
+
+- `php: >=8.0`
+- `laravel/nova: ^4.0`
+
+## Installation
+
+```bash
+# Install the package
+composer require stepanenko3/laravel-system-resources
+```
+
 ## Usage
 
 ``` php
@@ -23,27 +35,14 @@ $cpuName = SystemResources::cpuName();
 $cpu = SystemResources::cpu();
 ```
 
-## Install
-
-Via Composer
-
-``` bash
-$ composer require stepanenko3/laravel-system-resources
-```
-
-## Minimum requirements
-
-- Laravel 9.0
-- PHP 8.0
-
 ## Credits
 
-- [Artem Stepanenko](http://github.io.com/stepanenko3)
-
-## License
-
-This package is licensed under the MIT License - see the `LICENSE` file for details
+- [Artem Stepanenko](https://github.com/stepanenko3)
 
 ## Contributing
 
-Pull requests and issues are welcome.
+Thank you for considering contributing to this package! Please create a pull request with your contributions with detailed explanation of the changes you are proposing.
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](LICENSE.md).
