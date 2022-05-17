@@ -11,7 +11,7 @@ Get OS resources from Laravel
 ## Requirements
 
 - `php: >=8.0`
-- `laravel/nova: ^4.0`
+- `laravel/framework: ^9.0`
 
 ## Installation
 
