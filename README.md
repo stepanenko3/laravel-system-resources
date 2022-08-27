@@ -23,6 +23,8 @@ composer require stepanenko3/laravel-system-resources
 ## Usage
 
 ``` php
+use Stepanenko3\LaravelSystemResources\Facades\SystemResources;
+
 $ram = SystemResources::ram();
 $ramUsed = SystemResources::ramUsed();
 $ramTotal = SystemResources::ramTotal();
