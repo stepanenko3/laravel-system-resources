@@ -12,8 +12,8 @@ class SystemResources
      * @var array
      */
     private $eligible_drivers = [
-        'mac'     => MacSystemResources::class,
-        'linux'   => LinuxSystemResources::class,
+        'mac' => MacSystemResources::class,
+        'linux' => LinuxSystemResources::class,
         'windows' => WindowsSystemResources::class,
     ];
 
@@ -157,8 +157,6 @@ class SystemResources
     /**
      * Cache the resource results so on refresh we don't have to wait for data to come in.
      *
-     * @param string $resource
-     * @param int    $usage
      *
      * @return void
      */
@@ -194,6 +192,6 @@ class SystemResources
             $driver = 'mac';
         }
 
-        return new $this->eligible_drivers[$driver]();
+        return new $this->eligible_drivers[$driver];
     }
 }

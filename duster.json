@@ -1,0 +1,16 @@
+{
+    "exclude": [
+        "bootstrap",
+        "config"
+    ],
+    "scripts": {
+        "lint": {
+            "phpstan": [
+                "./vendor/bin/phpstan",
+                "analyse",
+                "src"
+            ]
+        }
+    },
+    "processTimeout": 120
+}

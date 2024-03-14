@@ -18,7 +18,7 @@ class SystemResources
      */
     public function __construct()
     {
-        $this->adapter = new Adapter();
+        $this->adapter = new Adapter;
     }
 
     /**

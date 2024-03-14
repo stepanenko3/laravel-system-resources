@@ -38,6 +38,7 @@ class LinuxSystemResources implements SystemResourcesInterface
     {
         $row = shell_exec("cat /proc/cpuinfo | grep 'model name' | uniq");
         $array = explode(':', $row);
+
         return trim($array[1]);
     }
 

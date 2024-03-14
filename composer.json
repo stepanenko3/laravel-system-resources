@@ -30,5 +30,8 @@
                 "SystemResources": "Stepanenko3\\LaravelSystemResources\\Facades\\SystemResources"
             }
         }
+    },
+    "require-dev": {
+        "tightenco/duster": "^2.7"
     }
 }

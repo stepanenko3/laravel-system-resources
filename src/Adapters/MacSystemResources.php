@@ -11,7 +11,7 @@ class MacSystemResources implements SystemResourcesInterface
      */
     public function cpuName()
     {
-        return shell_exec("sysctl -n machdep.cpu.brand_string");
+        return shell_exec('sysctl -n machdep.cpu.brand_string');
     }
 
     /**
