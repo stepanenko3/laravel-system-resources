@@ -21,7 +21,7 @@ class MacSystemResources implements SystemResourcesInterface
      */
     public function cpuResources()
     {
-        $cpu = shell_exec("top -l 1 | grep 'CPU usage:'");
+        $cpu = shell_exec('top -l 1 | grep \'CPU usage:\'');
 
         return (int) str_replace('CPU usage: ', '', explode('%', $cpu)[0]);
     }
@@ -33,7 +33,7 @@ class MacSystemResources implements SystemResourcesInterface
      */
     public function ramResources()
     {
-        return (int) shell_exec("ps -caxm -orss= | awk '{ sum += $1 } END { print sum }'"); // KB
+        return (int) shell_exec('ps -caxm -orss= | awk \'{ sum += $1 } END { print sum }\''); // KB
     }
 
     /**
@@ -49,7 +49,7 @@ class MacSystemResources implements SystemResourcesInterface
             return (int) $total_ram;
         }
 
-        $total_ram = shell_exec("hostinfo | grep 'Primary memory available:'");
+        $total_ram = shell_exec('hostinfo | grep \'Primary memory available:\'');
         $total_ram = (int) str_replace(['Primary memory available: ', ' gigabytes'], '', $total_ram);
 
         return $total_ram * 1024 * 1024;

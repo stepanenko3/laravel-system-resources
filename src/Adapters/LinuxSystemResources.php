@@ -13,8 +13,6 @@ class LinuxSystemResources implements SystemResourcesInterface
 
     /**
      * Retrieves all memory statistics from 'free' that we need.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -36,7 +34,7 @@ class LinuxSystemResources implements SystemResourcesInterface
      */
     public function cpuName()
     {
-        $row = shell_exec("cat /proc/cpuinfo | grep 'model name' | uniq");
+        $row = shell_exec('cat /proc/cpuinfo | grep \'model name\' | uniq');
         $array = explode(':', $row);
 
         return trim($array[1]);

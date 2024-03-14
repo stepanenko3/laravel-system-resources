@@ -156,11 +156,8 @@ class SystemResources
 
     /**
      * Cache the resource results so on refresh we don't have to wait for data to come in.
-     *
-     *
-     * @return void
      */
-    private function cacheResources(string $resource, int $usage)
+    private function cacheResources(string $resource, int $usage): void
     {
         $path = "{$resource}_resources";
         $cached_resources = Cache::get($path) ?: collect();
@@ -184,7 +181,7 @@ class SystemResources
         $agent = PHP_OS;
         $driver = 'linux';
 
-        if (strpos(strtolower($agent), 'win') !== false) {
+        if (str_contains(strtolower($agent), 'win')) {
             $driver = 'windows';
         }
 
@@ -192,6 +189,6 @@ class SystemResources
             $driver = 'mac';
         }
 
-        return new $this->eligible_drivers[$driver];
+        return new $this->eligible_drivers[$driver]();
     }
 }
