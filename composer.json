@@ -32,7 +32,7 @@
         }
     },
     "require-dev": {
-        "tightenco/duster": "^2.7",
+        "tightenco/duster": "^3.0",
         "phpstan/phpstan": "^1.10"
     }
 }
